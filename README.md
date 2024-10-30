@@ -1,117 +1,105 @@
 The content below is an example project proposal / requirements document. Replace the text below the lines marked "__TODO__" with details specific to your project. Remove the "TODO" lines.
 
-(__TODO__: your project name)
-
-# Shoppy Shoperson 
+# Recipe Sharing Platform
 
 ## Overview
 
-(__TODO__: a brief one or two paragraph, high-level description of your project)
-
-Remembering what to buy at the grocery store is waaaaay too difficult. Also, shopping for groceries when you're hungry leads to regrettable purchases. Sooo... that's where Shoppy Shoperson comes in!
-
-Shoppy Shoperson is a web app that will allow users to keep track of multiple grocery lists. Users can register and login. Once they're logged in, they can create or view their grocery list. For every list that they have, they can add items to the list or cross off items.
-
+This platform allows users to create, share, and discover recipes. Each recipe includes a list of ingredients, preparation instructions, and optional images. Users can also search by ingredients, dietary restrictions, or cuisine type, and save favorite recipes to their profile.
 
 ## Data Model
 
-(__TODO__: a description of your application's data and their relationships to each other) 
+The application will store Users, Recipes, and potentially Comments/Ratings (if implemented).
 
-The application will store Users, Lists and Items
+- **Users** can have multiple **Recipes** (via references).
+- Each **Recipe** will include embedded **Ingredients** and possibly **Comments** if users can provide feedback on recipes.
 
-* users can have multiple lists (via references)
-* each list can have multiple items (by embedding)
-
-(__TODO__: sample documents)
+### Sample Documents
 
 An Example User:
 
 ```javascript
 {
-  username: "shannonshopper",
+  username: "chefmaster",
   hash: // a password hash,
-  lists: // an array of references to List documents
+  favorites: // an array of references to Recipe documents,
+  recipes: // an array of references to Recipe documents
 }
 ```
 
-An Example List with Embedded Items:
+An Example Recipe:
 
 ```javascript
 {
-  user: // a reference to a User object
-  name: "Breakfast foods",
-  items: [
-    { name: "pancakes", quantity: "9876", checked: false},
-    { name: "ramen", quantity: "2", checked: true},
+  author: // a reference to a User object,
+  title: "Classic Pancakes",
+  ingredients: [
+    { name: "flour", quantity: "2 cups" },
+    { name: "milk", quantity: "1.5 cups" },
+    { name: "egg", quantity: "1" }
   ],
-  createdAt: // timestamp
+  instructions: "Mix ingredients and cook on medium heat...",
+  tags: ["breakfast", "vegetarian"],
+  createdAt: // timestamp,
+  comments: [
+    { user: // reference to a User, text: "Loved it!", createdAt: // timestamp 
+    }
+  ]
 }
 ```
 
-
-## [Link to Commented First Draft Schema](db.mjs) 
-
-(__TODO__: create a first draft of your Schemas in db.mjs and link to it)
+## [Link to Commented First Draft Schema](db.js)
 
 ## Wireframes
 
-(__TODO__: wireframes for all of the pages on your site; they can be as simple as photos of drawings or you can use a tool like Balsamiq, Omnigraffle, etc.)
+1. **/recipe/create** - page for creating a new recipe
+   ![recipe create](documentation/recipe-create.png)
+   
+2. **/recipes** - page for displaying all recipes with filters
+   ![recipes](documentation/recipes.png)
+   
+3. **/recipe/:slug** - page for displaying a specific recipe with details and comments
+   ![recipe details](documentation/recipe-details.png)
 
-/list/create - page for creating a new shopping list
+4. **/user/:username** - user profile page displaying their recipes and favorites
+   ![user profile](documentation/user-profile.png)
 
-![list create](documentation/list-create.png)
+## Site Map
 
-/list - page for showing all shopping lists
-
-![list](documentation/list.png)
-
-/list/slug - page for showing specific shopping list
-
-![list](documentation/list-slug.png)
-
-## Site map
-
-(__TODO__: draw out a site map that shows how pages are related to each other)
-
-Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia/commons/2/20/Sitemap_google.jpg), but you can create one without the screenshots, drop shadows, etc. ... just names of pages and where they flow to.
+- **Home** -> / (displays latest/featured recipes)
+- **Create Recipe** -> /recipe/create
+- **All Recipes** -> /recipes
+  - **Individual Recipe** -> /recipe/:slug
+- **User Profile** -> /user/:username
 
 ## User Stories or Use Cases
 
-(__TODO__: write out how your application will be used through [user stories](http://en.wikipedia.org/wiki/User_story#Format) and / or [use cases](https://en.wikipedia.org/wiki/Use_case))
-
-1. as non-registered user, I can register a new account with the site
-2. as a user, I can log in to the site
-3. as a user, I can create a new grocery list
-4. as a user, I can view all of the grocery lists I've created in a single list
-5. as a user, I can add items to an existing grocery list
-6. as a user, I can cross off items in an existing grocery list
+1. As a non-registered user, I can register a new account with the site.
+2. As a registered user, I can log in to the site.
+3. As a user, I can create a new recipe.
+4. As a user, I can view all recipes with the option to filter by ingredients or dietary tags.
+5. As a user, I can save recipes to my favorites list.
+6. As a user, I can add comments to recipes to share my feedback.
 
 ## Research Topics
 
-(__TODO__: the research topics that you're planning on working on along with their point values... and the total points of research topics listed)
+* (3 points) Unit Testing with JavaScript
+   * Using Jest to write at least four unit tests that verify core functionality, such as route responses and recipe data handling.
+   * Tests will be linked in the repository and include a screenshot of successful test runs.
+  
+* (5 points) Automated Functional Testing for Routes
+   * Implementing Headless Chrome for automated testing of key routes, including viewing, creating, editing, and deleting a recipe.
+   * A minimum of four tests will be written, with links to the test code in the repository and a screen capture showing successful test runs.
+  
+* (2 points) CSS Framework or UI Toolkit
+   * Utilizing Tailwind CSS to style the application, with customizations applied to achieve a consistent theme across pages.
+   * Relevant code and customizations will be included in the repository.
 
-* (5 points) Integrate user authentication
-    * I'm going to be using passport for user authentication
-    * And account has been made for testing; I'll email you the password
-    * see <code>cs.nyu.edu/~jversoza/ait-final/register</code> for register page
-    * see <code>cs.nyu.edu/~jversoza/ait-final/login</code> for login page
-* (4 points) Perform client side form validation using a JavaScript library
-    * see <code>cs.nyu.edu/~jversoza/ait-final/my-form</code>
-    * if you put in a number that's greater than 5, an error message will appear in the dom
-* (5 points) vue.js
-    * used vue.js as the frontend framework; it's a challenging library to learn, so I've assigned it 5 points
+10 points total out of 8 required points
 
-10 points total out of 8 required points (___TODO__: addtional points will __not__ count for extra credit)
-
-
-## [Link to Initial Main Project File](app.mjs) 
-
-(__TODO__: create a skeleton Express application with a package.json, app.mjs, views folder, etc. ... and link to your initial app.mjs)
+## [Link to Initial Main Project File](app.js)
 
 ## Annotations / References Used
 
-(__TODO__: list any tutorials/references/etc. that you've based your code off of)
-
 1. [passport.js authentication docs](http://passportjs.org/docs) - (add link to source code that was based on this)
-2. [tutorial on vue.js](https://vuejs.org/v2/guide/) - (add link to source code that was based on this)
-
+2. [Multer documentation](https://www.npmjs.com/package/multer) - (for image upload functionality)
+3. [MongoDB text search documentation](https://docs.mongodb.com/manual/text-search/) - (for implementing search and filter)

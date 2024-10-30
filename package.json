@@ -1,0 +1,24 @@
+{
+  "name": "final-project-josephchege4",
+  "version": "1.0.0",
+  "description": "The content below is an example project proposal / requirements document. Replace the text below the lines marked \"__TODO__\" with details specific to your project. Remove the \"TODO\" lines.",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "hbs": "^4.2.0",
+    "mongo-sanitize": "^1.1.0",
+    "mongoose": "^8.7.3",
+    "mongoose-slug-plugin": "^2.1.0"
+  }
+}
