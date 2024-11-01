@@ -51,24 +51,21 @@ An Example Recipe:
 
 ## Wireframes
 
-1. **/recipe/create** - page for creating a new recipe
+1. **/recipes/create** - page for creating a new recipe
    ![recipe create](documentation/recipe-create.png)
    
 2. **/recipes** - page for displaying all recipes with filters
    ![recipes](documentation/recipes.png)
    
-3. **/recipe/:slug** - page for displaying a specific recipe with details and comments
+3. **/recipes/:slug** - page for displaying a specific recipe with details and comments
    ![recipe details](documentation/recipe-details.png)
-
-4. **/user/:username** - user profile page displaying their recipes and favorites
-   ![user profile](documentation/user-profile.png)
 
 ## Site Map
 
 - **Home** -> / (displays latest/featured recipes)
-- **Create Recipe** -> /recipe/create
 - **All Recipes** -> /recipes
-  - **Individual Recipe** -> /recipe/:slug
+  - **Individual Recipe** -> /recipes/:slug
+  - **Create Recipe** -> /recipes/create
 - **User Profile** -> /user/:username
 
 ## User Stories or Use Cases
