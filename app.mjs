@@ -11,10 +11,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PORT = process.env.PORT || 3000;
 
-// Activate body parsing
+// Body parser setup
 app.use(express.urlencoded({ extended: false }));
 
-// Middleware for serving static files
+// Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Logging middleware
@@ -29,5 +29,7 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
   res.send('Welcome to the Recipe Sharing Platform');
 });
+
+
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
