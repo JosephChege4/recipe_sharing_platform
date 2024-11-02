@@ -15,33 +15,34 @@ The application will store Users, Recipes, and potentially Comments/Ratings (if 
 
 ### Sample Documents
 
-An Example User:
+Example User:
 
 ```javascript
 {
   username: "chefmaster",
   hash: // a password hash,
-  favorites: // an array of references to Recipe documents,
-  recipes: // an array of references to Recipe documents
+  favorites: // array of references to Recipe documents,
+  recipes: // array of references to Recipe documents
 }
 ```
 
-An Example Recipe:
+Example Recipe:
 
 ```javascript
 {
-  author: // a reference to a User object,
-  title: "Classic Pancakes",
+  author: // reference to a User object,
+  title: "Ugali",
   ingredients: [
-    { name: "flour", quantity: "2 cups" },
-    { name: "milk", quantity: "1.5 cups" },
-    { name: "egg", quantity: "1" }
+    { name: "cornmeal", quantity: "1 cups" },
+    { name: "water", quantity: "1 cups" },
+    { name: "butter", quantity: "1/4 stick" }
   ],
-  instructions: "Mix ingredients and cook on medium heat...",
-  tags: ["breakfast", "vegetarian"],
+  instructions: "Mix ingredients and boil in pot on medium heat...",
+  tags: ["lunch", "vegetarian"],
   createdAt: // timestamp,
   comments: [
-    { user: // reference to a User, text: "Loved it!", createdAt: // timestamp 
+    { user: // reference from a user, or maybe text: "Loved it!"
+    createdAt: // time here 
     }
   ]
 }
@@ -51,13 +52,13 @@ An Example Recipe:
 
 ## Wireframes
 
-1. **/recipes/create** - page for creating a new recipe
+1. **/recipes/create** - creating a new recipe
    ![recipe create](documentation/recipe-create.png)
    
-2. **/recipes** - page for displaying all recipes with filters
+2. **/recipes** - show/search recipes with filters
    ![recipes](documentation/recipes.png)
    
-3. **/recipes/:slug** - page for displaying a specific recipe with details and comments
+3. **/recipes/:slug** - display a single recipe with details, tags, and comments
    ![recipe details](documentation/recipe-details.png)
 
 ## Site Map
@@ -70,26 +71,26 @@ An Example Recipe:
 
 ## User Stories or Use Cases
 
-1. As a non-registered user, I can register a new account with the site.
+1. As a 'not yet registered' user, I can register a new account on the site.
 2. As a registered user, I can log in to the site.
-3. As a user, I can create a new recipe.
-4. As a user, I can view all recipes with the option to filter by ingredients or dietary tags.
-5. As a user, I can save recipes to my favorites list.
-6. As a user, I can add comments to recipes to share my feedback.
+3. As a user, I can create/add a new recipe.
+4. As a user, I can put in comments on recipes to share my feedback.
+5. As a user, I can look at or search for recipes with the option to filter by ingredients or dietary tags.
+6. As a user, I can list recipes to my 'favorites' section.
 
 ## Research Topics
 
 * (3 points) Unit Testing with JavaScript
-   * Using Jest to write at least four unit tests that verify core functionality, such as route responses and recipe data handling.
-   * Tests will be linked in the repository and include a screenshot of successful test runs.
+   * I want to use Jest to write at least four unit tests that verify core functionality. Maybe I'll do route responses and recipe data handling.
+   * I plan on linking the tests in the repository and include a screenshot of successful test runs.
   
 * (5 points) Automated Functional Testing for Routes
-   * Implementing Headless Chrome for automated testing of key routes, including viewing, creating, editing, and deleting a recipe.
-   * A minimum of four tests will be written, with links to the test code in the repository and a screen capture showing successful test runs.
+   * I think I'll try to use Headless Chrome for automated testing of key routes. Maybe I'll do  viewing, creating, editing, and/or deleting a recipe.
+   * At least of four tests will be written, with links to the test code in the repository with screenshots, as mentioned earlier.
   
 * (2 points) CSS Framework or UI Toolkit
-   * Utilizing Tailwind CSS to style the application, with customizations applied to achieve a consistent theme across pages.
-   * Relevant code and customizations will be included in the repository.
+   * I think I'll go for Tailwind CSS to style the application. I'll get to customizing to hopefully achieve a consistent theme across pages.
+   * All the relevant code and customizations should be  in the repository too.
 
 10 points total out of 8 required points
 

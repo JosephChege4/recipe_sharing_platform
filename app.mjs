@@ -27,9 +27,9 @@ app.use((req, res, next) => {
 
 // First route
 app.get('/', (req, res) => {
-  res.send('Welcome to the Recipe Sharing Platform');
+  res.send('Welcome');
 });
 
 
 
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server runs on port ${PORT}`));

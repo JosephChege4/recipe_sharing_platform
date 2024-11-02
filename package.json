@@ -20,6 +20,7 @@
     "express-session": "^1.18.1",
     "hbs": "^4.2.0",
     "mongo-sanitize": "^1.1.0",
+    "mongodb": "^6.10.0",
     "mongoose": "^8.7.3",
     "mongoose-slug-plugin": "^2.1.0"
   }
