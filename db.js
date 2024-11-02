@@ -1,15 +1,14 @@
 // 1ST DRAFT DATA MODEL
+import './config.mjs'
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
 
-dotenv.config();
-
+console.log("Connecting to MongoDB with DSN:", process.env.DSN);
 mongoose.connect(process.env.DSN, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.error('MongoDB connection error:', err));
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
 
 
 // Users
@@ -37,10 +36,16 @@ const IngredientSchema = new mongoose.Schema({
 // * Recipes can have 0 or more ingredients and optional tags
 // * Recipes also include instructions and a timestamp
 const RecipeSchema = new mongoose.Schema({
-  author: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+  author: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: false },
   title: { type: String, required: true },
   ingredients: [IngredientSchema],
   instructions: { type: String, required: true },
   tags: [String],
   createdAt: { type: Date, default: Date.now }
 });
+
+const User = mongoose.model('User', UserSchema);
+const Recipe = mongoose.model('Recipe', RecipeSchema);
+const Ingredient = mongoose.model('Ingredient', IngredientSchema);
+
+export { User, Recipe };
