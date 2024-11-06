@@ -1,5 +1,5 @@
 // 1ST DRAFT DATA MODEL
-import './config.mjs'
+import './config.mjs';
 import mongoose from 'mongoose';
 
 console.log("Connecting to MongoDB with DSN:", process.env.DSN);
@@ -12,7 +12,7 @@ mongoose.connect(process.env.DSN, {
 
 
 // Users
-// * Users have a username and a password hash for authentication
+// * Users get a username and a password hash for authentication
 // * They can have 0 or more favorite recipes and recipes they've created
 const UserSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
@@ -46,6 +46,6 @@ const RecipeSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', UserSchema);
 const Recipe = mongoose.model('Recipe', RecipeSchema);
-const Ingredient = mongoose.model('Ingredient', IngredientSchema);
+// const Ingredient = mongoose.model('Ingredient', IngredientSchema);
 
 export { User, Recipe };

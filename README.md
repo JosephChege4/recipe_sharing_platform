@@ -90,7 +90,7 @@ Example Recipe:
   
 * (2 points) CSS Framework or UI Toolkit
    * I think I'll go for Tailwind CSS to style the application. I'll get to customizing to hopefully achieve a consistent theme across pages.
-   * All the relevant code and customizations should be  in the repository too.
+   * All the relevant code and customizations should be in the repository too.
 
 10 points total out of 8 required points
 
@@ -101,3 +101,5 @@ Example Recipe:
 1. [passport.js authentication docs](http://passportjs.org/docs) - (add link to source code that was based on this)
 2. [Multer documentation](https://www.npmjs.com/package/multer) - (for image upload functionality)
 3. [MongoDB text search documentation](https://docs.mongodb.com/manual/text-search/) - (for implementing search and filter)
+4. [MongoDB Atlas Configure IP](https://www.mongodb.com/docs/atlas/security/ip-access-list/#add-ip-access-list-entries) - (for whitelisting Courant's IP Address)
+5. [Github Managing Access Tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) - (for setting up the access tokens before deploying to Courant's server)
