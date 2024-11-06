@@ -1,12 +1,18 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title></title>
-<link rel="stylesheet" href="/css/base.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link href="/css/tailwind-output.css" rel="stylesheet">
 </head>
-<body>
-	<h1>Shoppy Shopperson</h1>
-{{{ body }}}
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-600 p-4 text-white text-center">
+        <h1 class="text-3xl font-bold">Recipe Sharing</h1>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        {{{ body }}}
+    </main>
 </body>
 </html>

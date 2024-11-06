@@ -3,10 +3,7 @@ import './config.mjs';
 import mongoose from 'mongoose';
 
 console.log("Connecting to MongoDB with DSN:", process.env.DSN);
-mongoose.connect(process.env.DSN, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+mongoose.connect(process.env.DSN)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
