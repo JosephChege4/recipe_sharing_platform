@@ -3,16 +3,10 @@ Milestone 02
 
 Repository Link
 ---
-(TODO: add the link to your repository in github, such as, https://github.com/[COURSE]/[REPO_NAME])
-
-Special Instructions for Using Form and / or Login
----
-(TODO: if your app requires special instructions to use or if your app requires authentication, add information here; otherwise, leave blank)
+https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4.git
 
 URL for deployed site 
 ---
-(TODO: add url for your dpeloyed site; should be in this format http://linserv1.cims.nyu.edu:YOUR_PORT_NUMBER)
-
 http://linserv1.cims.nyu.edu:12174/
 ---
 (TODO: add link to a functioning form)
