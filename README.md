@@ -106,3 +106,4 @@ Example Recipe:
 6. [Tailwind Setup](https://tailwindcss.com/docs/content-configuration) - (for getting the Tailwind CSS configuration set and output file)
 7. [Configuration of the Database](https://stackoverflow.com/questions/55267494/the-uri-parameter-to-openuri-must-be-a-string-got-undefined) - (I used this resource in HW5 too, but I used some assistance in path, url, and getting the URI parameter correct)
 8. [Handlebars Basics](https://handlebarsjs.com/guide/#simple-expressions) - (I used this resource to make sure my form outline functioned well)
+9. [Form and Post Handling](https://stackoverflow.com/questions/58566856/res-status-500-message-internal-server-error-find-product-by-name-and-price) - (This resource helped with the async, the error handling, and status change)

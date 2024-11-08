@@ -50,7 +50,7 @@ app.post('/add-recipe', async (req, res) => {
     const { title, instructions } = req.body;
     const newRecipe = new Recipe({ title, instructions, createdAt: new Date() });
     await newRecipe.save();
-    res.redirect('/'); // Redirect to recipes list
+    res.redirect('/');
   } catch (err) {
     console.error(err);
     res.status(500).send("Error saving recipe");
