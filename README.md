@@ -104,4 +104,4 @@ Example Recipe:
 4. [MongoDB Atlas Configure IP](https://www.mongodb.com/docs/atlas/security/ip-access-list/#add-ip-access-list-entries) - (for whitelisting Courant's IP Address)
 5. [Github Managing Access Tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) - (for setting up the access tokens before deploying to Courant's server)
 6. [Tailwind Setup](https://tailwindcss.com/docs/content-configuration) - (for getting the Tailwind CSS configuration set and output file)
-7. [Configuration of the Database] (https://stackoverflow.com/questions/55267494/the-uri-parameter-to-openuri-must-be-a-string-got-undefined) - (I used this resource in HW5 too, but I used some assistance in path, url, and getting the URI parameter correct)
+7. [Configuration of the Database](https://stackoverflow.com/questions/55267494/the-uri-parameter-to-openuri-must-be-a-string-got-undefined) - (I used this resource in HW5 too, but I used some assistance in path, url, and getting the URI parameter correct)
