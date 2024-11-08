@@ -8,12 +8,14 @@ https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4
 URL for deployed site 
 ---
 http://linserv1.cims.nyu.edu:12174/
+
+URL for form
 ---
-(TODO: add link to a functioning form)
+http://linserv1.cims.nyu.edu:12174/add-recipe
 
 URL for form result
 ---
-(TODO: if applicable, add link to page that shows results of submitting form)
+http://linserv1.cims.nyu.edu:12174/
 
 URL to github that show line of code where research topic(s) are used / implemented
 --- 
