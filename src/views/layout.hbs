@@ -1,18 +1,27 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
     <link href="/css/tailwind-output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-blue-600 p-4 text-white text-center">
-        <h1 class="text-3xl font-bold">Recipe Sharing</h1>
+
+<body>
+    <header>
+        <h1 class="text-3xl font-bold">Recipe Sharing Website</h1>
     </header>
 
-    <main class="container mx-auto mt-8 p-4">
-        {{{ body }}}
-    </main>
+    <nav>
+        <ul>
+            <li><a href="/">Back Home</a></li>
+            <li><a href="/add-recipe">Add a Recipe</a></li>
+        </ul>
+    </nav>
+
+    {{{ body }}}
+   
 </body>
+
 </html>

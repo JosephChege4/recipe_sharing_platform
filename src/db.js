@@ -33,12 +33,12 @@ const IngredientSchema = new mongoose.Schema({
 // * Recipes can have 0 or more ingredients and optional tags
 // * Recipes also include instructions and a timestamp
 const RecipeSchema = new mongoose.Schema({
-  author: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: false },
   title: { type: String, required: true },
-  ingredients: [IngredientSchema],
   instructions: { type: String, required: true },
-  tags: [String],
-  createdAt: { type: Date, default: Date.now }
+  createdAt: { type: Date, default: Date.now, required: true },
+  ingredients: [IngredientSchema],
+  author: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: false },
+  tags: [String]
 });
 
 const User = mongoose.model('User', UserSchema);
