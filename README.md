@@ -92,7 +92,7 @@ Example Recipe:
    * I think I'll go for Tailwind CSS to style the application. I'll get to customizing to hopefully achieve a consistent theme across pages.
    * All the relevant code and customizations should be in the repository too.
 
-10 points total out of 8 required points
+10 points total
 
 ## [Link to Initial Main Project File](app.mjs)
 
