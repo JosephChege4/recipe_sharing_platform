@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const recipeDiv = document.createElement('div');
             recipeDiv.innerHTML = `
                 <h2>${recipe.title}</h2>
-                <p>${recipe.description || 'No description provided.'}</p>
+                <p>${recipe.instructions || 'No description provided.'}</p>
             `;
             container.appendChild(recipeDiv);
         });

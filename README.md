@@ -85,8 +85,8 @@ Example Recipe:
    * I plan on linking the tests in the repository and include a screenshot of successful test runs.
   
 * (5 points) Automated Functional Testing for Routes
-   * I think I'll try to use Headless Chrome for automated testing of key routes. Maybe I'll do  viewing, creating, editing, and/or deleting a recipe.
-   * At least of four tests will be written, with links to the test code in the repository with screenshots, as mentioned earlier.
+   * I think I'll try to use Headless Chrome for automated testing of key routes. Maybe I'll do viewing, creating, editing, and/or deleting a recipe.
+   * At least four tests will be written, with links to the test code in the repository with screenshots, as mentioned earlier.
   
 * (2 points) CSS Framework or UI Toolkit
    * I think I'll go for Tailwind CSS to style the application. I'll get to customizing to hopefully achieve a consistent theme across pages.
