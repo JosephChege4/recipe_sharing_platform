@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     const container = document.getElementById('recipes-container');
 
     try {
-        // Fetch recipes from the backend API
-        const response = await fetch('/api/recipes'); // Replace with your API endpoint
+        // fetch recipes from the backend API
+        const response = await fetch('/api/recipes');
         const recipes = await response.json();
 
-        // Dynamically add recipes to the container
+        // Add recipes to the container
         recipes.forEach(recipe => {
             const recipeDiv = document.createElement('div');
             recipeDiv.innerHTML = `

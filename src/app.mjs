@@ -4,9 +4,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import './db.js';
-import hbs from 'hbs';
-import { User, Recipe } from './db.js';
-import mongoose from 'mongoose';
+import { Recipe } from './db.js';
+// import hbs from 'hbs';
+// import mongoose from 'mongoose';
 
 dotenv.config();
 
@@ -14,8 +14,6 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PORT = process.env.PORT || 3000;
-
-// configure app to use hbs as templating library
 
 // Body parser setup
 app.use(express.urlencoded({ extended: false }));
