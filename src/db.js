@@ -1,4 +1,3 @@
-// 1ST DRAFT DATA MODEL
 import './config.mjs';
 import mongoose from 'mongoose';
 

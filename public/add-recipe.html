@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
+    <title>Add Recipe</title>
     <link href="/css/tailwind-output.css" rel="stylesheet">
 </head>
 
@@ -20,8 +20,17 @@
         </ul>
     </nav>
 
-    {{{ body }}}
-   
+    <main>
+        <form action="/add-recipe" method="POST">
+            <label>Recipe Title:</label>
+            <input type="text" name="title" required />
+
+            <label>Instructions:</label>
+            <textarea name="instructions" required></textarea>
+
+            <button type="submit">Submit Recipe</button>
+        </form>
+    </main>
 </body>
 
 </html>

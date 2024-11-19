@@ -16,14 +16,12 @@ const __dirname = path.dirname(__filename);
 const PORT = process.env.PORT || 3000;
 
 // configure app to use hbs as templating library
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'views'));
 
 // Body parser setup
 app.use(express.urlencoded({ extended: false }));
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Logging middleware
 app.use((req, res, next) => {
@@ -35,13 +33,23 @@ app.use((req, res, next) => {
 
 // First route
 app.get('/', async (req, res) => {
-  const recipes = await Recipe.find({});
-  res.render('index', { recipes });
+  res.sendFile(path.join(__dirname, '../public/templates/index.html'));
 });
 
 // Route to render the form
 app.get('/add-recipe', (req, res) => {
-  res.render('add-recipe');
+  res.sendFile(path.join(__dirname, '../public/templates/add-recipe.html'));
+});
+
+// API endpoint to fetch recipes
+app.get('/api/recipes', async (req, res) => {
+  try {
+    const recipes = await Recipe.find({});
+    res.json(recipes);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Error fetching recipes" });
+  }
 });
 
 // Route to handle form submission
