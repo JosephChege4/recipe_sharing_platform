@@ -21,12 +21,15 @@
     "tailwindcss": "^3.4.14"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.21.1",
     "express-session": "^1.18.1",
     "hbs": "^4.2.0",
     "mongo-sanitize": "^1.1.0",
     "mongodb": "^6.10.0",
     "mongoose": "^8.7.3",
-    "mongoose-slug-plugin": "^2.1.0"
+    "mongoose-slug-plugin": "^2.1.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
   }
 }

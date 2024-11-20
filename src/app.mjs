@@ -4,9 +4,11 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import './db.js';
-import { Recipe } from './db.js';
-// import hbs from 'hbs';
-// import mongoose from 'mongoose';
+import { User, Recipe } from './db.js';
+import passport from 'passport';
+import session from 'express-session';
+import bcrypt from 'bcrypt';
+import { Strategy as LocalStrategy } from 'passport-local';
 
 dotenv.config();
 
@@ -17,6 +19,17 @@ const PORT = process.env.PORT || 3000;
 
 // Body parser setup
 app.use(express.urlencoded({ extended: false }));
+
+// Session setup
+app.use(session({
+  secret: process.env.SESSION_SECRET || 'secret',
+  resave: false,
+  saveUninitialized: false
+}));
+
+// Passport setup
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Serve static files
 app.use(express.static(path.join(__dirname, '../public')));
@@ -29,6 +42,35 @@ app.use((req, res, next) => {
   next();
 });
 
+// Passport local strategy
+passport.use(new LocalStrategy(async (username, password, done) => {
+  try {
+    const user = await User.findOne({ username });
+    if (!user) { return done(null, false, { message: 'Incorrect username' }); }
+
+    const match = await bcrypt.compare(password, user.hash);
+    if (!match) { return done(null, false, { message: 'Incorrect password' }); }
+
+    return done(null, user);
+  } catch (err) {
+    return done(err);
+  }
+}));
+
+passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
+
+passport.deserializeUser(async (id, done) => {
+  try {
+    const user = await User.findById(id);
+    done(null, user);
+  } catch (err) {
+    done(err);
+  }
+});
+
+
 // First route
 app.get('/', async (req, res) => {
   res.sendFile(path.join(__dirname, '../public/templates/index.html'));
@@ -37,6 +79,32 @@ app.get('/', async (req, res) => {
 // Route to render the form
 app.get('/add-recipe', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/templates/add-recipe.html'));
+});
+
+app.get('/login', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/templates/login.html'));
+});
+
+app.post('/login', passport.authenticate('local', {
+  successRedirect: '/',
+  failureRedirect: '/login'
+}));
+
+app.get('/register', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/templates/register.html'));
+});
+
+app.post('/register', async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    const hash = await bcrypt.hash(password, 10);
+    const newUser = new User({ username, hash });
+    await newUser.save();
+    res.redirect('/login');
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Error registering user');
+  }
 });
 
 // API endpoint to fetch recipes
