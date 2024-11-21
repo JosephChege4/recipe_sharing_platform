@@ -105,3 +105,6 @@ Example Recipe:
 5. [Handlebars Basics](https://handlebarsjs.com/guide/#simple-expressions) - (I used this resource to make sure my form outline functioned well)
 6. [Form and Post Handling](https://stackoverflow.com/questions/58566856/res-status-500-message-internal-server-error-find-product-by-name-and-price) - (This resource helped with the async, the error handling, and status change)
 7. [Mongoose Connection](https://mongoosejs.com/docs/connections.html) - (This source helped with Mongoose connection and DSN printing)
+8. [User Authentication](https://www.selcukguler.com/blog/passportjs-user-authentication-expressjs-guide)
+9. [Passport.js](https://www.passportjs.org/howtos/password/)
+10. [Node.js Authentication](https://heynode.com/tutorial/authenticate-users-node-expressjs-and-passportjs/)

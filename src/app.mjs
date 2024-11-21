@@ -43,19 +43,25 @@ app.use((req, res, next) => {
 });
 
 // Passport local strategy
-passport.use(new LocalStrategy(async (username, password, done) => {
-  try {
-    const user = await User.findOne({ username });
-    if (!user) { return done(null, false, { message: 'Incorrect username' }); }
+passport.use(new LocalStrategy(
+  async (username, password, done) => {
+    try {
+      const user = await User.findOne({ username });
+      if (!user) {
+        return done(null, false, { message: 'Incorrect username' });
+      }
 
-    const match = await bcrypt.compare(password, user.hash);
-    if (!match) { return done(null, false, { message: 'Incorrect password' }); }
+      const match = await bcrypt.compare(password, user.hash);
+      if (!match) {
+        return done(null, false, { message: 'Incorrect password' });
+      }
 
-    return done(null, user);
-  } catch (err) {
-    return done(err);
+      return done(null, user);
+    } catch (err) {
+      return done(err);
+    }
   }
-}));
+));
 
 passport.serializeUser((user, done) => {
   done(null, user.id);
@@ -76,7 +82,7 @@ app.get('/', async (req, res) => {
   res.sendFile(path.join(__dirname, '../public/templates/index.html'));
 });
 
-// Route to render the form
+// Route to render our first required form
 app.get('/add-recipe', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/templates/add-recipe.html'));
 });
@@ -87,7 +93,8 @@ app.get('/login', (req, res) => {
 
 app.post('/login', passport.authenticate('local', {
   successRedirect: '/',
-  failureRedirect: '/login'
+  failureRedirect: '/login',
+  failureFlash: true,
 }));
 
 app.get('/register', (req, res) => {
