@@ -110,3 +110,4 @@ Example Recipe:
 10. [Node.js Authentication](https://heynode.com/tutorial/authenticate-users-node-expressjs-and-passportjs/)
 11. [More Tailwind Nav Bars](https://wpdean.com/tailwind-navbar/)
 12. [Even More Tailwind Nav Bars](https://code2care.org/tutorial/step-by-step-navigation-bar-pure-html-css-js/)
+13. [Another Tailwind Source](https://www.kindacode.com/article/tailwind-css-create-a-responsive-top-navigation-menu)
