@@ -22,7 +22,7 @@ URL(s) to github repository with commits that show progress on research
 https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3
 https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tailwind.config.js#L1-L10
 
-References 
+References (Lines linked here were based on the Acknowledgements I have in the README file)
 ---
 https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/config.mjs#L3-L7
 https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3
