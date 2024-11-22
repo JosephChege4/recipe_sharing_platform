@@ -15,12 +15,14 @@ http://linserv1.cims.nyu.edu:12174/add-recipe
 
 URL for form 2 (for current milestone)
 ---
-
+http://linserv1.cims.nyu.edu:12174/register
 
 URL(s) to github repository with commits that show progress on research
 --- 
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tailwind.config.js#L1-L10
+[CSS Framework or UI Toolkit](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3)
+[CSS Framework or UI Toolkit](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tailwind.config.js#L1-L10)
+[Unit Testing with JavaScript](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122)
+[Unit Testing with JavaScript](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/jest.config.js)
 
 References (Lines linked here were based on the Acknowledgements I have in the README file)
 ---
