@@ -101,22 +101,21 @@ describe('Express App', () => {
         expect(res.headers.location).toEqual('/login');
     });
 
-    // it('should redirect to / on successful login', async () => {
-    //     // Mock User.findOne to return a valid user
-    //     jest.spyOn(User, 'findOne').mockImplementation(async () => ({
-    //         id: '123',
-    //         username: 'testuser',
-    //         hash: await bcrypt.hash('testpass', 10),
-    //     }));
+    it('should redirect to / on successful login', async () => {
+        // Mock User.findOne to return a valid user
+        jest.spyOn(User, 'findOne').mockImplementation(async () => ({
+            username: 'testuser',
+            hash: await bcrypt.hash('testpass', 10),
+        }));
 
-    //     // Mock bcrypt.compare to return true
-    //     jest.spyOn(bcrypt, 'compare').mockImplementation(async () => true);
+        // Mock bcrypt.compare to return true
+        jest.spyOn(bcrypt, 'compare').mockImplementation(async () => true);
 
-    //     const res = await request(app)
-    //         .post('/login')
-    //         .send({ username: 'testuser', password: 'testpass' });
+        const res = await request(app)
+            .post('/login')
+            .send({ username: 'testuser', password: 'testpass' });
 
-    //     expect(res.statusCode).toEqual(302);
-    //     expect(res.headers.location).toEqual('/'); // Expect redirect to '/'
-    // });
+        expect(res.statusCode).toEqual(302);
+        expect(res.headers.location).toEqual('/'); // Expect redirect to '/'
+    });
 });

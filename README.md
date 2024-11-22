@@ -94,7 +94,7 @@ Example Recipe:
 
 10 points total
 
-## [Link to Initial Main Project File](app.mjs)
+## [Link to Initial Main Project File](src/app.mjs)
 
 ## Annotations / References Used
 
