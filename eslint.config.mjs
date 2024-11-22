@@ -3,8 +3,11 @@ import pluginJs from "@eslint/js";
 
 
 export default [
-  { languageOptions: { globals: { ...globals.browser, ...globals.node } } }, 
+  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   {
+    env: {
+      jest: true, // Enables Jest environment for your project
+    },
     rules:
     {
       'semi': ['error', 'always'],

@@ -111,3 +111,6 @@ Example Recipe:
 11. [More Tailwind Nav Bars](https://wpdean.com/tailwind-navbar/)
 12. [Even More Tailwind Nav Bars](https://code2care.org/tutorial/step-by-step-navigation-bar-pure-html-css-js/)
 13. [Another Tailwind Source](https://www.kindacode.com/article/tailwind-css-create-a-responsive-top-navigation-menu)
+14. [Linting with Jest](https://stackoverflow.com/questions/44611190/using-jest-in-my-react-app-describe-is-not-defined)
+15. [Testing with Jest](https://dev.to/nedsoft/testing-nodejs-express-api-with-jest-and-supertest-1km6)
+16. [More Testing with Jest](https://www.freecodecamp.org/news/how-to-test-in-express-and-mongoose-apps/)
