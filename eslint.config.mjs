@@ -6,7 +6,7 @@ export default [
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   {
     env: {
-      jest: true, // Enables Jest environment for your project
+      jest: true,
     },
     rules:
     {
