@@ -1,10 +1,18 @@
 import './config.mjs';
 import mongoose from 'mongoose';
 
-console.log("Connecting to MongoDB with DSN:", process.env.DSN);
+if (process.env.NODE_ENV !== 'test') {
+  console.log("Connecting to MongoDB with DSN:", process.env.DSN);
+}
+
 mongoose.connect(process.env.DSN)
-  .then(() => console.log('MongoDB connected'))
+  .then(() => {
+    if (process.env.NODE_ENV !== 'test') {
+      console.log('MongoDB connected');
+    }
+  })
   .catch(err => console.error('MongoDB connection error:', err));
+
 
 
 // Users
