@@ -29,22 +29,23 @@ beforeAll(() => {
     app.use(passport.session());
 });
 
-// Mock Passport Local Strategy
+beforeEach(async () => {
+    jest.clearAllMocks();
+});
+
 passport.use(new LocalStrategy(
     async (username, password, done) => {
-        try {
-            const user = await User.findOne({ username });
-            if (!user) {
-                return done(null, false, { message: 'Incorrect username' });
-            }
-            const match = await bcrypt.compare(password, user.hash);
-            if (!match) {
-                return done(null, false, { message: 'Incorrect password' });
-            }
-            return done(null, user);
-        } catch (err) {
-            return done(err);
+        const user = await User.findOne({ username });
+        if (!user) {
+            console.log('Mock Strategy: User not found');
+            return done(null, false, { message: 'Incorrect username' });
         }
+        const match = await bcrypt.compare(password, user.hash);
+        if (!match) {
+            console.log('Mock Strategy: Password mismatch');
+            return done(null, false, { message: 'Incorrect password' });
+        }
+        return done(null, user);
     }
 ));
 
@@ -75,6 +76,7 @@ app.post('/login', passport.authenticate('local', {
     failureRedirect: '/login',
 }));
 
+
 // Test suite
 describe('Express App', () => {
     it('should return 200 OK for GET /', async () => {
@@ -95,27 +97,26 @@ describe('Express App', () => {
 
         const res = await request(app)
             .post('/login')
-            .send({ username: 'wronguser', password: 'wrongpass' });
+            .send('username=wronguser&password=wrongpass');
 
         expect(res.statusCode).toEqual(302);
         expect(res.headers.location).toEqual('/login');
     });
 
     it('should redirect to / on successful login', async () => {
-        // Mock User.findOne to return a valid user
-        jest.spyOn(User, 'findOne').mockImplementation(async () => ({
+        // Mock User and bcrypt
+        jest.spyOn(User, 'findOne').mockResolvedValue({
+            id: '123',
             username: 'testuser',
             hash: await bcrypt.hash('testpass', 10),
-        }));
-
-        // Mock bcrypt.compare to return true
-        jest.spyOn(bcrypt, 'compare').mockImplementation(async () => true);
+        });
+        jest.spyOn(bcrypt, 'compare').mockResolvedValue(true);
 
         const res = await request(app)
             .post('/login')
-            .send({ username: 'testuser', password: 'testpass' });
+            .send('username=testuser&password=testpass');
 
         expect(res.statusCode).toEqual(302);
-        expect(res.headers.location).toEqual('/'); // Expect redirect to '/'
+        expect(res.headers.location).toEqual('/'); 
     });
 });

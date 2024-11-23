@@ -114,3 +114,6 @@ Example Recipe:
 14. [Linting with Jest](https://stackoverflow.com/questions/44611190/using-jest-in-my-react-app-describe-is-not-defined)
 15. [Testing with Jest](https://dev.to/nedsoft/testing-nodejs-express-api-with-jest-and-supertest-1km6)
 16. [More Testing with Jest](https://www.freecodecamp.org/news/how-to-test-in-express-and-mongoose-apps/)
+17. [Node.js Puppeteer](https://www.digitalocean.com/community/tutorials/how-to-write-end-to-end-tests-in-node-js-using-puppeteer-and-jest)
+18. [More Jest and Puppeteer](https://blog.logrocket.com/end-to-end-testing-react-jest-puppeteer)
+19. [More Puppeteer](https://www.headspin.io/blog/testing-with-puppeteer-a-complete-guide)

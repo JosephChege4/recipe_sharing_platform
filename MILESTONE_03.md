@@ -30,3 +30,4 @@
 - [Recipe API Routes](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L45-L77)
 - [Static File Serving](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L24-L32)
 - [Unit Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122)
+- [Automated Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/functional/functional.test.js#L1-L49)
