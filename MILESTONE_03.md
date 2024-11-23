@@ -1,37 +1,32 @@
-Milestone 03
-===
+# Milestone 03
 
-Repository Link
----
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4.git
+## Repository Link
+[Repository](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4.git)
 
-URL for deployed site 
----
-http://linserv1.cims.nyu.edu:12174/
+## URL for Deployed Site
+[Deployed Site](http://linserv1.cims.nyu.edu:12174/)
 
-URL for form 1 (from previous milestone)
----
-http://linserv1.cims.nyu.edu:12174/add-recipe
+## URL for Form 1 (from Previous Milestone)
+[Add Recipe Form](http://linserv1.cims.nyu.edu:12174/add-recipe)
 
-URL for form 2 (for current milestone)
----
-http://linserv1.cims.nyu.edu:12174/register
+## URL for Form 2 (for Current Milestone)
+[Register Form](http://linserv1.cims.nyu.edu:12174/register)
 
-URL(s) to github repository with commits that show progress on research
---- 
-[CSS Framework or UI Toolkit](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3)
-[CSS Framework or UI Toolkit](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tailwind.config.js#L1-L10)
-[Unit Testing with JavaScript](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122)
-[Unit Testing with JavaScript](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/jest.config.js)
+## URLs to GitHub Repository with Commits Showing Progress on Research
+- [CSS Framework or UI Toolkit](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3)
+- [CSS Framework or UI Toolkit](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tailwind.config.js#L1-L10)
+- [Unit Testing with JavaScript](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122)
+- [Unit Testing with JavaScript](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/jest.config.js)
 
-References (Lines linked here were based on the Acknowledgements I have in the README file)
----
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/config.mjs#L3-L7
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/views/layout.hbs#L1-L18
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L47-L58
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/db.js#L5-L8
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L90-L115
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L45-L77
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L24-L32
-https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122
+## References
+*Lines linked here were based on the acknowledgments in the README file.*
+
+- [Config Setup](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/config.mjs#L3-L7)
+- [Tailwind CSS](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3)
+- [Layout View](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/views/layout.hbs#L1-L18)
+- [Application Routes - Middleware](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L47-L58)
+- [Database Connection](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/db.js#L5-L8)
+- [Authentication Logic](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L90-L115)
+- [Recipe API Routes](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L45-L77)
+- [Static File Serving](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L24-L32)
+- [Unit Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122)
