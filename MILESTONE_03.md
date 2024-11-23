@@ -17,6 +17,7 @@
 - [CSS Framework or UI Toolkit](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tailwind.config.js#L1-L10)
 - [Unit Testing with JavaScript](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122)
 - [Unit Testing with JavaScript](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/jest.config.js)
+- [Automated Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/functional/functional.test.js#L1-L49)
 
 ## References
 *Lines linked here were based on the acknowledgments in the README file.*
