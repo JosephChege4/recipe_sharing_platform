@@ -42,6 +42,36 @@ app.use((req, res, next) => {
   next();
 });
 
+// Functions for validation for the Security Requirement
+function validateRecipeInput(req, res, next) {
+  const { title, instructions } = req.body;
+  if (!title || typeof title !== 'string' || title.trim() === '') {
+      return res.status(400).send('Invalid recipe title');
+  }
+  if (!instructions || typeof instructions !== 'string' || instructions.trim() === '') {
+      return res.status(400).send('Invalid recipe instructions');
+  }
+  next();
+}
+
+function validateRegisterInput(req, res, next) {
+  const { username, password } = req.body;
+  if (!username || typeof username !== 'string' || username.trim() === '') {
+      return res.status(400).send('Invalid username');
+  }
+  if (!password || typeof password !== 'string' || password.length < 6) {
+      return res.status(400).send('Password must be at least 6 characters long');
+  }
+  next();
+}
+
+function isAuthenticated(req, res, next) {
+  if (req.isAuthenticated()) {
+      return next();
+  }
+  res.redirect('/login');
+}
+
 // Passport local strategy
 passport.use(new LocalStrategy(
   async (username, password, done) => {
@@ -101,7 +131,7 @@ app.get('/register', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/templates/register.html'));
 });
 
-app.post('/register', async (req, res) => {
+app.post('/register',validateRegisterInput, async (req, res) => {
   try {
     const { username, password } = req.body;
     const hash = await bcrypt.hash(password, 10);
@@ -115,9 +145,9 @@ app.post('/register', async (req, res) => {
 });
 
 // API endpoint to fetch recipes
-app.get('/api/recipes', async (req, res) => {
+app.get('/api/recipes', isAuthenticated, async (req, res) => {
   try {
-    const recipes = await Recipe.find({});
+    const recipes = await Recipe.find({author: req.user_id});
     res.json(recipes);
   } catch (err) {
     console.error(err);
@@ -126,7 +156,7 @@ app.get('/api/recipes', async (req, res) => {
 });
 
 // Route to handle form submission
-app.post('/add-recipe', async (req, res) => {
+app.post('/add-recipe', validateRecipeInput, async (req, res) => {
   try {
     const { title, instructions } = req.body;
     const newRecipe = new Recipe({ title, instructions, createdAt: new Date() });

@@ -1,4 +1,10 @@
-# Milestone 03
+# Milestone 03 - Final Project Documentation
+
+# NetID
+jcm9824
+
+# Name
+Joseph Chege Mungai
 
 ## Repository Link
 [Repository](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4.git)
@@ -13,6 +19,10 @@
 [Register Form](http://linserv1.cims.nyu.edu:12174/register)
 
 ## URL for Form 3 (for Current Milestone)
+[Login Form](http://linserv1.cims.nyu.edu:12174/login)
+
+## URL for Form 4 (for Current Milestone)
+[AJAX Interaction (Fetch)](http://linserv1.cims.nyu.edu:12174/)
 
 ## Short description for links above
 
@@ -27,6 +37,9 @@
 - [Unit Testing with JavaScript (Jest)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122)
 - [Unit Testing with JavaScript (Jest)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/jest.config.js)
 - [Automated Test Code (Puppeteer)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/functional/functional.test.js#L1-L49)
+
+# Optional project notes 
+
 
 ## References
 *Lines linked here were based on the acknowledgments in the README file.*
