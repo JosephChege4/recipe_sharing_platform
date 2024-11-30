@@ -26,6 +26,11 @@ Joseph Chege Mungai
 
 ## Short description for links above
 
+- **Add Recipe Form**: A form that allows users to add a new recipe with a title and instructions
+- **Register Form**: A form for user registration, including username and password
+- **Login Form**: A form for user authentication, allowing registered users to log in and access protected routes
+- **AJAX Interaction (Fetch)**: A client-side fetch request that retrieves a list of recipes from the server, rendering them on the homepage
+
 ## Link to github line number(s) for schemas (db.js or models folder)
 [Schema](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/db.js#L18-L43)
 
