@@ -46,7 +46,7 @@ Joseph Chege Mungai
 
 - [Config Setup](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/config.mjs#L3-L7) - Based on Source #4 in *Acknowledgements*
 
-- [Tailwind CSS](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/public/css/tailwind.css#L1-L3) - Based on Sources #5, #11-13 in *Acknowledgements*
+- [Tailwind CSS](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/public/css/tailwind.css#L1-L3) - Based on Sources #3, #5, #11-13 in *Acknowledgements*
 
 - [Application Routes - Middleware](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L124-L128) - Based on Source #6 in *Acknowledgements*
 
@@ -60,18 +60,18 @@ Joseph Chege Mungai
 
 - [Unit Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122) - Based on Sources #14-16 in *Acknowledgements*
 
-- [Automated Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/functional/functional.test.js#L1-L49) - Based on Sources #17-119 in *Acknowledgements*
+- [Automated Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/functional/functional.test.js#L1-L49) - Based on Sources #17-19 in *Acknowledgements*
 
 ## Attributions 
 *All the code under "References" is based on the sources below (also in README)*
 
 1. [MongoDB Atlas Configure IP](https://www.mongodb.com/docs/atlas/security/ip-access-list/#add-ip-access-list-entries) - (for whitelisting Courant's IP Address)
 2. [Github Managing Access Tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) - (for setting up the access tokens before deploying to Courant's server)
-3. [Tailwind Setup](https://tailwindcss.com/docs/content-configuration) - (for getting the Tailwind CSS configuration set and output file)
-4. [Configuration of the Database](https://stackoverflow.com/questions/55267494/the-uri-parameter-to-openuri-must-be-a-string-got-undefined) - (I used this resource in HW5 too, but I used some assistance in path, url, and getting the URI parameter correct)
-5. [Tailwing Navigation](https://tailwindui.com/components/application-ui/navigation/navbars) - (I used this resource to make sure the nav looked nice)
-6. [Form and Post Handling](https://stackoverflow.com/questions/58566856/res-status-500-message-internal-server-error-find-product-by-name-and-price) - (This resource helped with the async, the error handling, and status change)
-7. [Mongoose Connection](https://mongoosejs.com/docs/connections.html) - (This source helped with Mongoose connection and DSN printing)
+3. [Tailwind Setup](https://tailwindcss.com/docs/content-configuration)
+4. [Configuration of the Database](https://stackoverflow.com/questions/55267494/the-uri-parameter-to-openuri-must-be-a-string-got-undefined)
+5. [Tailwing Navigation](https://tailwindui.com/components/application-ui/navigation/navbars)
+6. [Form and Post Handling](https://stackoverflow.com/questions/58566856/res-status-500-message-internal-server-error-find-product-by-name-and-price)
+7. [Mongoose Connection](https://mongoosejs.com/docs/connections.html)
 8. [User Authentication](https://www.selcukguler.com/blog/passportjs-user-authentication-expressjs-guide) - (This source )
 9. [Passport.js](https://www.passportjs.org/howtos/password/)
 10. [Node.js Authentication](https://heynode.com/tutorial/authenticate-users-node-expressjs-and-passportjs/)
