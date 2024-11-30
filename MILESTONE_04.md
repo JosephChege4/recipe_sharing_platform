@@ -1,9 +1,9 @@
-# Milestone 03 - Final Project Documentation
+# Milestone 04 - Final Project Documentation
 
-# NetID
+## NetID
 jcm9824
 
-# Name
+## Name
 Joseph Chege Mungai
 
 ## Repository Link
@@ -31,6 +31,12 @@ Joseph Chege Mungai
 
 ## Description of research topics above with points
 
+- **2 points** - Applied and customized the Tailwind CSS framework
+- **3 points** - Implemented unit testing using Jest to 
+- **5 points** - Developed automated functional tests using Puppeteer
+
+**Total Points: 10** 
+
 ## Links to github line number(s) for research topics described above 
 - [CSS Framework or UI Toolkit (Tailwind)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3)
 - [CSS Framework or UI Toolkit (Tailwind)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tailwind.config.js#L1-L10)
@@ -38,7 +44,7 @@ Joseph Chege Mungai
 - [Unit Testing with JavaScript (Jest)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/jest.config.js)
 - [Automated Test Code (Puppeteer)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/functional/functional.test.js#L1-L49)
 
-# Optional project notes 
+## Optional project notes 
 
 
 ## References
@@ -46,7 +52,7 @@ Joseph Chege Mungai
 
 - [Config Setup](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/config.mjs#L3-L7) - Based on Source #4 in *Acknowledgements*
 
-- [Tailwind CSS](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/public/css/tailwind.css#L1-L3) - Based on Sources #3, #5, #11-13 in *Acknowledgements*
+- [Tailwind CSS](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/public/css/tailwind.css#L1-L3) - Based on Sources #3, #5, and #11-13 in *Acknowledgements*
 
 - [Application Routes - Middleware](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L124-L128) - Based on Source #6 in *Acknowledgements*
 
@@ -72,7 +78,7 @@ Joseph Chege Mungai
 5. [Tailwing Navigation](https://tailwindui.com/components/application-ui/navigation/navbars)
 6. [Form and Post Handling](https://stackoverflow.com/questions/58566856/res-status-500-message-internal-server-error-find-product-by-name-and-price)
 7. [Mongoose Connection](https://mongoosejs.com/docs/connections.html)
-8. [User Authentication](https://www.selcukguler.com/blog/passportjs-user-authentication-expressjs-guide) - (This source )
+8. [User Authentication](https://www.selcukguler.com/blog/passportjs-user-authentication-expressjs-guide)
 9. [Passport.js](https://www.passportjs.org/howtos/password/)
 10. [Node.js Authentication](https://heynode.com/tutorial/authenticate-users-node-expressjs-and-passportjs/)
 11. [More Tailwind Nav Bars](https://wpdean.com/tailwind-navbar/)
