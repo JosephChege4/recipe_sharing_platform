@@ -44,16 +44,23 @@ Joseph Chege Mungai
 ## References
 *Lines linked here were based on the acknowledgments in the README file.*
 
-- [Config Setup](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/config.mjs#L3-L7)
-- [Tailwind CSS](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3)
-- [Layout View](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/views/layout.hbs#L1-L18)
-- [Application Routes - Middleware](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L47-L58)
-- [Database Connection](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/db.js#L5-L8)
-- [Authentication Logic](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L90-L115)
-- [Recipe API Routes](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L45-L77)
-- [Static File Serving](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L24-L32)
-- [Unit Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122)
-- [Automated Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/functional/functional.test.js#L1-L49)
+- [Config Setup](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/config.mjs#L3-L7) - Based on Source #4 in *Acknowledgements*
+
+- [Tailwind CSS](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/public/css/tailwind.css#L1-L3) - Based on Sources #5, #11-13 in *Acknowledgements*
+
+- [Application Routes - Middleware](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L124-L128) - Based on Source #6 in *Acknowledgements*
+
+- [Database Connection](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/db.js#L8-L14) Based on Sources #4 and #7 in *Acknowledgements*
+
+- [Authentication Logic](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L76-L107) - Based on Sources #8-10 in *Acknowledgements*
+
+- [Auxilary Security Functions](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L45-L73) - Based on Sources #20-21 in *Acknowledgements*
+
+- [Static File Serving](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/app.mjs#L24-L32) - Based on Source #22 in *Acknowledgements* 
+
+- [Unit Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122) - Based on Sources #14-16 in *Acknowledgements*
+
+- [Automated Test Code](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/functional/functional.test.js#L1-L49) - Based on Sources #17-119 in *Acknowledgements*
 
 ## Attributions 
 *All the code under "References" is based on the sources below (also in README)*
@@ -65,7 +72,7 @@ Joseph Chege Mungai
 5. [Tailwing Navigation](https://tailwindui.com/components/application-ui/navigation/navbars) - (I used this resource to make sure the nav looked nice)
 6. [Form and Post Handling](https://stackoverflow.com/questions/58566856/res-status-500-message-internal-server-error-find-product-by-name-and-price) - (This resource helped with the async, the error handling, and status change)
 7. [Mongoose Connection](https://mongoosejs.com/docs/connections.html) - (This source helped with Mongoose connection and DSN printing)
-8. [User Authentication](https://www.selcukguler.com/blog/passportjs-user-authentication-expressjs-guide)
+8. [User Authentication](https://www.selcukguler.com/blog/passportjs-user-authentication-expressjs-guide) - (This source )
 9. [Passport.js](https://www.passportjs.org/howtos/password/)
 10. [Node.js Authentication](https://heynode.com/tutorial/authenticate-users-node-expressjs-and-passportjs/)
 11. [More Tailwind Nav Bars](https://wpdean.com/tailwind-navbar/)
@@ -77,3 +84,6 @@ Joseph Chege Mungai
 17. [Node.js Puppeteer](https://www.digitalocean.com/community/tutorials/how-to-write-end-to-end-tests-in-node-js-using-puppeteer-and-jest)
 18. [More Jest and Puppeteer](https://blog.logrocket.com/end-to-end-testing-react-jest-puppeteer)
 19. [More Puppeteer](https://www.headspin.io/blog/testing-with-puppeteer-a-complete-guide)
+20. [Input Validation](https://www.freecodecamp.org/news/how-to-make-input-validation-simple-and-clean-in-your-express-js-app-ea9b5ff5a8a7/)
+21. [Form Inputs](https://www.digitalocean.com/community/tutorials/how-to-handle-form-inputs-efficiently-with-express-validator-in-express-js)
+22. [Session Configuration](https://www.npmjs.com/package/express-session/v/1.10.4)

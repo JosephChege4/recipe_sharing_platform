@@ -117,3 +117,6 @@ Example Recipe:
 17. [Node.js Puppeteer](https://www.digitalocean.com/community/tutorials/how-to-write-end-to-end-tests-in-node-js-using-puppeteer-and-jest)
 18. [More Jest and Puppeteer](https://blog.logrocket.com/end-to-end-testing-react-jest-puppeteer)
 19. [More Puppeteer](https://www.headspin.io/blog/testing-with-puppeteer-a-complete-guide)
+20. [Input Validation](https://www.freecodecamp.org/news/how-to-make-input-validation-simple-and-clean-in-your-express-js-app-ea9b5ff5a8a7/)
+21. [Form Inputs](https://www.digitalocean.com/community/tutorials/how-to-handle-form-inputs-efficiently-with-express-validator-in-express-js)
+22. [Session Configuration](https://www.npmjs.com/package/express-session/v/1.10.4)

@@ -46,10 +46,10 @@ app.use((req, res, next) => {
 function validateRecipeInput(req, res, next) {
   const { title, instructions } = req.body;
   if (!title || typeof title !== 'string' || title.trim() === '') {
-      return res.status(400).send('Invalid recipe title');
+    return res.status(400).send('Invalid recipe title');
   }
   if (!instructions || typeof instructions !== 'string' || instructions.trim() === '') {
-      return res.status(400).send('Invalid recipe instructions');
+    return res.status(400).send('Invalid recipe instructions');
   }
   next();
 }
@@ -57,17 +57,17 @@ function validateRecipeInput(req, res, next) {
 function validateRegisterInput(req, res, next) {
   const { username, password } = req.body;
   if (!username || typeof username !== 'string' || username.trim() === '') {
-      return res.status(400).send('Invalid username');
+    return res.status(400).send('Invalid username');
   }
   if (!password || typeof password !== 'string' || password.length < 6) {
-      return res.status(400).send('Password must be at least 6 characters long');
+    return res.status(400).send('Your password must be at least 6 characters long');
   }
   next();
 }
 
 function isAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
-      return next();
+    return next();
   }
   res.redirect('/login');
 }
@@ -131,7 +131,7 @@ app.get('/register', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/templates/register.html'));
 });
 
-app.post('/register',validateRegisterInput, async (req, res) => {
+app.post('/register', validateRegisterInput, async (req, res) => {
   try {
     const { username, password } = req.body;
     const hash = await bcrypt.hash(password, 10);
@@ -147,11 +147,11 @@ app.post('/register',validateRegisterInput, async (req, res) => {
 // API endpoint to fetch recipes
 app.get('/api/recipes', isAuthenticated, async (req, res) => {
   try {
-    const recipes = await Recipe.find({author: req.user_id});
+    const recipes = await Recipe.find({ author: req.user_id });
     res.json(recipes);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: "Error fetching recipes" });
+    res.status(500).json({ error: "Error fetching recipes or Not logged in correctly" });
   }
 });
 
