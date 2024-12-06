@@ -37,7 +37,7 @@ Joseph Chege Mungai
 ## Description of research topics above with points
 
 - **2 points** - Applied and customized the Tailwind CSS framework
-- **3 points** - Implemented unit testing using Jest to 
+- **3 points** - Implemented unit testing using Jest
 - **5 points** - Developed automated functional tests using Puppeteer
 
 **Total Points: 10** 
@@ -49,11 +49,8 @@ Joseph Chege Mungai
 - [Unit Testing with JavaScript (Jest)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/jest.config.js)
 - [Automated Test Code (Puppeteer)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/functional/functional.test.js#L1-L49)
 
-## Optional project notes 
-
-
 ## References
-*Lines linked here were based on the acknowledgments in the README file.*
+*Lines linked here were based on the acknowledgments in the README file. Also, outside of these links and class notes, ChatGPT assisted me with some structural debugging*
 
 - [Config Setup](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/config.mjs#L3-L7) - Based on Source #4 in *Acknowledgements*
 
