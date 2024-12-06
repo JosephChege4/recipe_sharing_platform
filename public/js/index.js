@@ -10,9 +10,8 @@ class Recipe {
     render() {
         // Render the recipe to DOM
         const recipeDiv = document.createElement('div');
-        recipeDiv.textContent = `
-            <h2>${this.title}</h2>
-            <p>${this.instructions}</p>
+        recipeDiv.innerHTML = `
+            Title: ${this.title}; Instructions: ${this.instructions}</p>
         `;
         return recipeDiv;
     }
@@ -39,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });        
     } catch (error) {
         console.error('Error fetching recipes:', error);
-        container.innerHTML = '<p>Failed to load recipes. Please try again later.</p>';
+        container.innerHTML = '<p> Nothing yet. </p>';
     }
 });
 
