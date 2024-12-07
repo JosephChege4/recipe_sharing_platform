@@ -51,6 +51,7 @@ Example Recipe:
 ## [Link to Commented First Draft Schema](src/db.js)
 
 ## Wireframes
+*See [Optional Project Notes](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/MILESTONE_04.md?plain=1#L54-L55)*
 
 1. **/recipes/create** - creating a new recipe
    ![recipe create](documentation/recipe-create.png)
