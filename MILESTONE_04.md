@@ -51,6 +51,9 @@ Joseph Chege Mungai
 - [Automated Test Code (Puppeteer)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/functional/functional.test.js#L1-L49)
 - [Screenshot for Tests](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/documentation/test_screenshot.png)
 
+## Optional Project Notes
+I didn't implement everything in the wireframes. I converted the 'recipes'.png page to the '/' route. I changed 'create.png' into the '/add-recipe' route. The 'recipe-details.png' hasn't been implemented during this project.
+
 ## References
 *Lines linked here were based on the acknowledgments in the README file. Also, outside of these links and class notes, ChatGPT assisted me with some structural debugging*
 
