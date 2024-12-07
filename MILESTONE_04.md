@@ -43,6 +43,7 @@ Joseph Chege Mungai
 **Total Points: 10** 
 
 ## Links to github line number(s) for research topics described above 
+*Screenshots for tests are in the 'documentation' folder*
 - [CSS Framework or UI Toolkit (Tailwind)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/src/public/css/tailwind.css#L1-L3)
 - [CSS Framework or UI Toolkit (Tailwind)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tailwind.config.js#L1-L10)
 - [Unit Testing with JavaScript (Jest)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-JosephChege4/blob/master/tests/app.test.js#L79-L122)
